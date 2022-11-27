@@ -1,1 +1,1 @@
-web: gunicorn nicksproject.wsgi
+web: gunicorn nicksproject.wsgi --log-file -
