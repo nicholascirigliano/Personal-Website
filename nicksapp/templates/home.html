@@ -17,7 +17,7 @@
                     li {
                         display: inline-block;
                         padding: 10px;
-                        color: black;
+                        color: white;
                     }
                 </style>
                 <ul>
@@ -34,7 +34,7 @@
                         </a>
 
                         <li> <a href="{% static 'nicksapp/images/NicholasCiriglianoResume.pdf' %}">
-                            <button type="button" class="btn btn-danger">Resume</button> </a>
+                            <button type="button" class="btn btn-primary">Resume</button> </a>
                         </li>
                 </ul>
             </div>
@@ -44,12 +44,36 @@
 
 
     <body>
+
+        <script>
+            var body = document.getElementsByTagName('body')[0];
+            body.style.backgroundColor = 'white';
+
+            // trigger this function every time the user scrolls
+            window.onscroll = function (event) {
+                var scroll = window.pageYOffset;
+                if (scroll < 700) {
+                    // green
+                    body.style.backgroundColor = 'gray';
+                } else if (scroll >= 700 && scroll < 3300) {
+                    // yellow
+                    body.style.backgroundColor = 'lightgray';
+
+                } else 
+                    // purple
+                    body.style.backgroundColor = 'white';
+                }
+        </script>
+
+
         <style type="text/css">
             body{
-                background: white;
+                transition: background 1.0s ease;
             }
         </style>
+
         <main>
+    
 
         <div>
             <div class="container">
@@ -68,13 +92,15 @@
                                 }
                             </style>
 
-                        <p style="font-size: 20px;">I am a Client Renewal Representative at IBM 
+                        <p style="font-size: 18px;">I am a Client Renewal Representative at IBM 
                         and pursuing my <br> Masters of Science in Business Analytics degree from The College of William & Mary. <br> My focus is in machine learning.</p>
                         </p>
 
+                        <br>
+
                         <div>
                             <a href="#AboutMe">
-                                <button type="button" class="btn btn-primary">More About Me</button>
+                                <button type="button" class="btn btn-danger">More About Me</button>
                             </a>
                         </div>
                     </div>
@@ -233,7 +259,7 @@
                     </h2>  
                
 
-                    <p>Decomposed private and public construction spending in the United States from 2002 through 2014 spending data series using the most appropriate of the two time series decomposition methods that were demonstrated in the videos. Also used Pandas to compute the squared error for my model relative to the original data series for each month, and cumulatively as well.</p>
+                    <p>Followed along with an example project from Scikit-learn.org which demonstrates how the Scikit package can be used to build a classifier that is able to recognize images of hand-written digits from 0-9.</p>
 
                     <div>
                         <!img src="{% static 'nicksapp/images/TimeSeries2.png' %}" style="object-fit: contain; overflow: hidden;">
