@@ -34,7 +34,7 @@
                         </a>
 
                         <li> <a href="{% static 'nicksapp/images/NicholasCiriglianoResume.pdf' %}">
-                            <button type="button" class="btn btn-primary">Resume</button> </a>
+                            <button type="button" class="btn btn-danger">Resume</button> </a>
                         </li>
                 </ul>
             </div>
@@ -47,14 +47,14 @@
 
         <script>
             var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundColor = 'white';
+            body.style.backgroundColor = 'lightslategray';
 
             // trigger this function every time the user scrolls
             window.onscroll = function (event) {
                 var scroll = window.pageYOffset;
                 if (scroll < 700) {
                     // green
-                    body.style.backgroundColor = 'gray';
+                    body.style.backgroundColor = 'lightslategray';
                 } else if (scroll >= 700 && scroll < 3300) {
                     // yellow
                     body.style.backgroundColor = 'lightgray';
@@ -84,11 +84,10 @@
                         <p>
                         <h6>Hello, my name is</h6>
 
-                        <h1>Nicholas Cirigliano</h1>
+                        <h1 style="color: white;">Nicholas Cirigliano</h1>
                             <style type="text/css">
                                 h1 {
                                     font-size: 85px;
-                                    color: black;
                                 }
                             </style>
 
