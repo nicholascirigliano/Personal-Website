@@ -34,7 +34,7 @@
                         </a>
 
                         <li> <a href="{% static 'nicksapp/images/NicholasCiriglianoResume.pdf' %}">
-                            <button type="button" class="btn btn-danger">Resume</button> </a>
+                            <button type="button" class="btn btn-primary">Resume</button> </a>
                         </li>
                 </ul>
             </div>
@@ -47,17 +47,17 @@
 
         <script>
             var body = document.getElementsByTagName('body')[0];
-            body.style.backgroundColor = 'lightslategray';
+            body.style.backgroundColor = 'black';
 
             // trigger this function every time the user scrolls
             window.onscroll = function (event) {
                 var scroll = window.pageYOffset;
-                if (scroll < 700) {
+                if (scroll < 3450) {
                     // green
-                    body.style.backgroundColor = 'lightslategray';
-                } else if (scroll >= 700 && scroll < 3300) {
+                    body.style.backgroundColor = 'black';
+                } else if (scroll >= 3450) {
                     // yellow
-                    body.style.backgroundColor = 'lightgray';
+                    body.style.backgroundColor = 'white';
 
                 } else 
                     // purple
@@ -82,24 +82,25 @@
                     
                         <br><br><br>
                         <p>
-                        <h6>Hello, my name is</h6>
+                        <h6 style="text-justify: left; color: white;">Hello, my name is</h6>
 
-                        <h1 style="color: white;">Nicholas Cirigliano</h1>
+                        <h1 style="color: floralwhite;">Nicholas Cirigliano</h1>
                             <style type="text/css">
                                 h1 {
                                     font-size: 85px;
+                                    text-align: left;
                                 }
                             </style>
 
-                        <p style="font-size: 18px;">I am a Client Renewal Representative at IBM 
-                        and pursuing my <br> Masters of Science in Business Analytics degree from The College of William & Mary. <br> My focus is in machine learning.</p>
+                        <p style="font-size: 18px; color: white;">I am a Client Renewal Representative at IBM 
+                        and pursuing my <br> Masters of Science in Business Analytics degree from The College of William & Mary. </p>
                         </p>
 
                         <br>
 
                         <div>
                             <a href="#AboutMe">
-                                <button type="button" class="btn btn-danger">More About Me</button>
+                                <button type="button" class="btn btn-outline-danger">More About Me</button>
                             </a>
                         </div>
                     </div>
@@ -124,15 +125,15 @@
 
         <div>
             <div class="container" style="color: black;">
-                <div class="row mb-2 p-3 p-md-4" style="margin-left: 10%;  margin-right: 10%; break-before: auto; border-radius: 20px" id="AboutMe">
-                    <div class="col md-4">
-                        <h1>About Me</h1>
-                        <hr>
+                <div class="row mb-2 p-3 p-md-4" style="margin-left: 10%; margin-right: 10%; break-before: auto; border-radius: 20px" id="AboutMe">
+                    <div class="col md-4" style="color: white;">
+                        <h1 style="color: white;">About Me</h1>
+                        <hr style="color: white;">
                         <p>Hello, my name is Nicholas Cirigliano. I am currently pursuing my Masters of Science in Business Analytics degree from The College of William & Mary. Skills that I have acquired in this program include querying relational databases using SQL, creating data visualizations and dashboards with Tableau, managing data using services such as Hadoop, Amazon Web Services and NoSQL, utilizing basic methodologies including regression, logistic regression, time-series analysis, Bayesian methods, etc. and analyzing/writing computer programs in Python and R.
                             
                         <p>I initially taught myself how to program with Python by following along with project based books as well as various resouces on the internet. When I decided that I wanted to build a personal website in the summer of 2022, I was not familiar with HTML or CSS, so I followed along with a Django blog project on Youtube and watched over 30 hours of video while retyping the code simultaneously to learn. I now enjoy buliding websites in my spare time and continually learning the endless amount of design possibilities.</p>
 
-                        <p>However, my main area of focus as I work through my MSBA program is Machine Learning (ML). In my portfolio below, you will find projects that I have completed relating to time series forecasting, classification, regression and many other ML subfields.</p>
+                        <p>In my portfolio below, you will find projects that I have completed relating to time series forecasting, data visualization, classification, regression and many other data science subfields.</p>
 
 
 
@@ -146,75 +147,75 @@
 
         <div class="container">
 
-            <div class="row mb-2" style="margin-left: 10%; margin-right: 10%; page-break-before: auto; color: black;" id="Experience">
-                 <h1 style="color: black;">Experience</h1>
+            <div class="row mb-2" style="margin-left: 10%; margin-right: 10%; page-break-before: auto; color: white;" id="Experience">
+                 <h1 style="color: white;">Experience</h1>
                  <br> 
                  <br><br>
             </div>
           
             
             <div>
-                <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: black;">
+                <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: white;">
                 <hr>
-                    <div class="col-md-6 p-2" style="text-align: left; justify-content: left;">
-                        <h3>Subscription and Annuity Sales, U.S. Public West - Select Accounts at <strong style="color: #0d6efd">IBM</strong></h3>
+                    <div class="col-md-6 p-2" style="text-align: left; justify-content: left; color: white;">
+                        <h3>Subscription and Annuity Sales, U.S. Public West - Select Accounts at <strong style="color: #0d6efd;">IBM</strong></h3>
                         <br>
                         <p> - Promoted to cover mid level market accounts (~ $5M) which include additional contracting options such as enterprise license agreements (ELA’s)</p>
                     </div>
-                    <div class="col-md-6 p-2" style="text-align: right;">
+                    <div class="col-md-6 p-2" style="text-align: right; color: white;">
                         <h2>06/2022 - Present</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: black;">
+            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: white;">
             <hr>
-                <div class="col-md-6 p-2" style="text-align: left; justify-content: left;">
-                    <h3>Client Renewal Advocate, Cloud and Cognitive Solutions, Volume Accounts at <strong style="color: #0d6efd">IBM</strong></h3>
+                <div class="col-md-6 p-2" style="text-align: left; justify-content: left;  color: white;">
+                    <h3>Client Renewal Advocate, Cloud and Cognitive Solutions, Volume Accounts at <strong style="color: #0d6efd;">IBM</strong></h3>
                     <br>
                     <p> - Exceeded all targets for Q3 2021 including revenue attainment (114%), September fast start (107%), reinstatement and opportunity identification (379%) and annual contract value renewed (110%). Improved upon these same objectives in Q4 as follows; revenue attainment (116%), January fast start (113%), reinstatement and opportunity identification (456%) and annual contract value renewed (111%)<br><br>
                      - Selected by manager to lead training session on new IBM sales process for 10 employees <br> <br> - Selected by regional manager to be a mentor for new sales hires</p>
                 </div>
-                <div class="col-md-6 p-2" style="text-align: right;">
+                <div class="col-md-6 p-2" style="text-align: right; color: white;">
                     <h2>07/2021 - 06/2022</h2>
                 </div>
             </div>
 
-            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: black;">
+            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: white;">
             <hr>
-                <div class="col-md-6 p-2" style="text-align: left; justify-content: left;">
-                    <h3>Client Renewal Advocate, Cloud and Cognitive Solutions, Autorenewal Accounts at <strong style="color: #0d6efd">IBM</strong></h3>
+                <div class="col-md-6 p-2" style="text-align: left; justify-content: left; color: white;">
+                    <h3>Client Renewal Advocate, Cloud and Cognitive Solutions, Autorenewal Accounts at <strong style="color: #0d6efd;">IBM</strong></h3>
                     <br>
                     <p> - Responsible for customer retention and up-sell of 700+ accounts in the Communications Market while still prospecting and identifying new opportunities<br> <br>
                      - Closed 580K (155%) of reinstatement revenue and 361K (289%) of net new revenue as a team in Q4 2020. Achieved an annual contract value renewal rate of 88% while closing $1,055,000 (176%) of new business and 334K (167%) of reinstatement revenue as a team for 1H 2021</p>
                 </div>
-                <div class="col-md-6 p-2" style="text-align: right;">
+                <div class="col-md-6 p-2" style="text-align: right; color: white;">
                     <h2>10/2020 - 06/2021</h2>
                 </div>
             </div>
 
-            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: black;">
+            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: white;">
             <hr>
-                <div class="col-md-6 p-2" style="text-align: left; justify-content: left;">
-                    <h3>Digital Sales Specialist, Summit Trainee at <strong style="color: #0d6efd">IBM</strong></h3>
+                <div class="col-md-6 p-2" style="text-align: left; justify-content: left; color: white;">
+                    <h3>Digital Sales Specialist, Summit Trainee at <strong style="color: #0d6efd;">IBM</strong></h3>
                     <br>
                     <p> - Graduated from Global Sales School, a highly competitive and experiential six-month training program that provides new IBM sellers with the skills and expertise to solve client business problems <br> <br>
                      - Recognized as a “Champion Learner” for being in the top 3% of all learners at IBM by completing 438 hours of education</p>
                 </div>
-                <div class="col-md-6 p-2" style="text-align: right;">
+                <div class="col-md-6 p-2" style="text-align: right; color: white;">
                     <h2>03/2020 - 09/2020</h2>
                 </div>
             </div>
 
 
-            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: black">
+            <div class="row mb-4 p-2" style="margin-left: 10%; margin-right: 10%; color: white;">
             <hr>
-                <div class="col-md-6 p-2" style="text-align: left; justify-content: left;">
-                    <h3>Government Account Manager, Adobe Team at <strong style="color: #0d6efd">Carahsoft</strong></h3>
+                <div class="col-md-6 p-2" style="text-align: left; justify-content: left; color: white;">
+                    <h3>Government Account Manager, Adobe Team at <strong style="color: #0d6efd;">Carahsoft</strong></h3>
                     <br>
                     <p>  - Responsible for customer retention and up-sell of Adobe Digital Experience products in the western U.S. <br><br> - Generated leads, qualified opportunities and forecasted pipeline for government agencies averaging 700K per month</p>
                 </div>
-                <div class="col-md-6 p-2" style="text-align: right;">
+                <div class="col-md-6 p-2" style="text-align: right; color: white;">
                     <h2>05/2019 - 01/2020</h2>
                 </div>
             </div>
@@ -241,7 +242,7 @@
                     </h2>  
                
 
-                    <p>Decomposed private and public construction spending in the United States from 2002 through 2014 spending data series using the most appropriate of the two time series decomposition methods that were demonstrated in the videos. Also used Pandas to compute the squared error for my model relative to the original data series for each month, and cumulatively as well.</p>
+                    <p>Decomposed private and public construction spending in the United States from 2002 through 2014. Also used Pandas to compute the squared error for my model relative to the original data series for each month, and cumulatively as well.</p>
 
                 </div>
                 <div class="col-md-6 mb-4">
@@ -253,12 +254,12 @@
         <div class="container">
             <div class="row mb-2">
                 <div class="col-md-6 py-4">
-                    <h2><strong>Classification</strong> 
-                        <li class="ms-0"><a class="link-dark" href="https://nicholascirigliano.github.io/MachineLearning/IdentifyingDigits.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 18 18"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
+                    <h2><strong>Data Visualization</strong> 
+                        <li class="ms-0"><a class="link-dark" href="https://nicholascirigliano.github.io/DataCampProjects/handwashing.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 18 18"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a></li>
                     </h2>  
                
 
-                    <p>Followed along with an example project from Scikit-learn.org which demonstrates how the Scikit package can be used to build a classifier that is able to recognize images of hand-written digits from 0-9.</p>
+                    <p>Data visualization project using Pandas to show the fatality rate of women giving birth before and after the concept of handwashing was introduced by Dr. Ignaz Semmelweis in 1847. </p>
 
                     <div>
                         <!img src="{% static 'nicksapp/images/TimeSeries2.png' %}" style="object-fit: contain; overflow: hidden;">
@@ -266,7 +267,7 @@
 
                 </div>
                 <div class="col-md-6 mb-4 py-4">
-                    <img src="{% static 'nicksapp/images/digits.png' %}">
+                    <img src="{% static 'nicksapp/images/handwashing.png' %}">
                      
                 </div>
             </div>
